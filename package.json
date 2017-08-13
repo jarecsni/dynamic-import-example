@@ -9,12 +9,13 @@
     "react-loadable": "^4.0.3"
   },
   "devDependencies": {
-    "react-scripts": "1.0.7"
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.1.1",
+    "babel-plugin-syntax-dynamic-import": "^6.18.0",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-preset-env": "^1.6.0",
+    "file-loader": "^0.11.2",
+    "webpack": "^3.5.4"
   },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
-  }
+  "scripts": {}
 }
