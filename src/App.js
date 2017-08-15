@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import Tab1 from './Tab1';
 import Tab2 from './Tab2';
-import Tab3Lazy from './Tab3Lazy'
+import Tab3Lazy from './Tab3Lazy';
+import Tab4 from './Tab4';
 
 class App extends Component {
   constructor(props) {
@@ -27,11 +28,15 @@ class App extends Component {
           import assets.
         </p>
 
-        <a href="" onClick={e => this.showTab(e, 1)}>Tab 1</a> | <a href="" onClick={e => this.showTab(e, 2)}>Tab 2</a> | <a href="" onClick={e => this.showTab(e, 3)}>Tab 3</a>
+        <a href="" onClick={e => this.showTab(e, 1)}>Tab 1</a> | 
+        <a href="" onClick={e => this.showTab(e, 2)}>Tab 2</a> | 
+        <a href="" onClick={e => this.showTab(e, 3)}>Tab 3</a> |
+        <a href="" onClick={e => this.showTab(e, 4)}>Tab 4</a>
         
         { selectedTab === 1 && <Tab1 /> }
         { selectedTab === 2 && <Tab2 /> }
         { selectedTab === 3 && <Tab3Lazy /> }
+        { selectedTab === 4 && <Tab4 /> }
       </div>
     );
   }
