@@ -1,4 +1,4 @@
-console.log('[auto] one loading');
-export default function() {
-    console.log('[auto] one default');
+console.log('module "one": loading');
+export default function one() {
+    console.log('module "one": function one() running');
 }
